@@ -1,94 +1,55 @@
-🌌 Aura v1.0 — Text Based Assistant
+# 🤖 Aura V1.5
 
-Tagline:
-✨ Aura v1.0 — your lightweight terminal companion powered by Python.
+Aura is a Python-based personal AI assistant that evolved from a terminal-based assistant into an interactive Streamlit web application.
 
----
-
-📖 About The Project
-
-Aura v1.0 is a lightweight text-based assistant built using Python that runs directly inside the terminal.
-It interacts with users using animated typing responses and basic command recognition to simulate a simple virtual assistant experience.
-
-This project was created to practice and demonstrate core Python concepts such as:
-
-- Functions
-- Object-Oriented Programming (OOP)
-- Command handling
-- Terminal interaction
-- Automation using the webbrowser module
-
-Aura greets the user, accepts commands, and performs actions like opening websites.
+Aura V1.5 introduces a modern chat interface, LLM integration, animated responses, and command-based actions.
 
 ---
 
-⚙️ Features
+## ✨ Features
 
-- 💬 Animated typing effect (human-like responses)
-- 👤 Personalized greeting system
-- 🧠 Command detection
-- 🌐 Opens YouTube from terminal commands
-- 🔁 Continuous conversation loop
-- 🧩 Expandable assistant structure
-
----
-
-🛠️ Built With
-
-- Python 3
-- time
-- sys
-- re
-- webbrowser
+- 💬 Interactive Streamlit chat interface
+- 🧠 LLM-powered responses using OpenRouter
+- ⚡ Command-based assistant actions
+- 🎵 Play music through YouTube
+- ▶️ Open YouTube
+- 📸 Open Instagram
+- 🕐 Date and time responses
+- 😂 Joke responses
+- 💭 Animated "Aura is thinking" indicator
+- 💾 Chat history using Streamlit session state
+- 🔐 API keys managed through environment variables
 
 ---
 
-🚀 Getting Started
+## 🛠️ Tech Stack
 
-Prerequisites
-
-Make sure Python is installed:
-
-python --version
-
-Installation
-
-1. Clone the repository
-
-git clone https://github.com/your-username/Aura-v1.0.git
-
-2. Navigate into the folder
-
-cd Aura-v1.0
-
-3. Run the assistant
-
-python aurav1.0.py
+- Python
+- Streamlit
+- OpenRouter
+- OpenAI Python SDK
+- python-dotenv
+- PyWhatKit
+- PyJokes
+- Requests
 
 ---
 
-💻 Usage
+## 📁 Project Structure
 
-- Enter your name when prompted.
-- Type commands in the terminal.
-- Example commands:
-  - "youtube"
-  - "exit"
-
-Aura will respond with animated text and execute supported actions.
-
----
-
-🔮 Future Improvements
-
-- Voice interaction support
-- More commands and automation
-- Smarter conversation system
-- GUI version
-- Plugin-based command system
-
----
-
-⭐ Author
-
-Made with ❤️ using Python.
+```text
+Aura/
+│
+├── features/
+│   ├── actions.py
+│   ├── api.py
+│   ├── replies.py
+│   └── utils.py
+│
+├── LLM/
+│   └── llm.py
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
