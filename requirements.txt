@@ -2,5 +2,5 @@ streamlit
 openai
 python-dotenv
 pyjokes
-pywhatkit
+
 requests

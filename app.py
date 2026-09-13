@@ -57,17 +57,17 @@ if prompt:
             response = st.write_stream(aura.type_animator(aura.farwell_replies()))
         st.session_state.messages.append({"role": "assistant", "content": response})
 
-    elif 'play' in prompt or 'music' in prompt:
-        if 'play' in prompt:
-            prompt = prompt.replace("play","")
-        elif 'music' in prompt:
-            prompt = prompt.replace("music","")
-        thinking()
-        response = f"Playing {prompt}"
-        with st.chat_message("assistant"):
-            st.write(response)
-        st.session_state.messages.append({"role": "assistant", "content": response})
-        aura.play_music(prompt)
+    # elif 'play' in prompt or 'music' in prompt:
+    #     if 'play' in prompt:
+    #         prompt = prompt.replace("play","")
+    #     elif 'music' in prompt:
+    #         prompt = prompt.replace("music","")
+    #     thinking()
+    #     response = f"Playing {prompt}"
+    #     with st.chat_message("assistant"):
+    #         st.write(response)
+    #     st.session_state.messages.append({"role": "assistant", "content": response})
+    #     aura.play_music(prompt)
 
     else:
         thinking()

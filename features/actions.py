@@ -1,4 +1,4 @@
-import webbrowser,time,random,pyjokes,os,pywhatkit
+import webbrowser,time,random,pyjokes,os  #,pywhatkit
 from features.utils import Text_Animator
 from features.replies import Replies_class
 from datetime import datetime
@@ -19,8 +19,8 @@ class Aura(Text_Animator,Replies_class):
         return None,None
 
 
-    def play_music(self,music):
-            pywhatkit.playonyt(music)
+    # def play_music(self,music):
+    #         pywhatkit.playonyt(music)
 
     def date_time(self):
             date12 = datetime.now().strftime("%d-%m-%y")
