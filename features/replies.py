@@ -27,16 +27,22 @@ class Replies_class():
             "Aura: Give me a second..."])
         return reply
 
-
-    def greeting_replies(self, name):
+    def greeting_replies(self):
         reply = random.choice([
-            f"Aura: Hello, {name}.",
-            f"Aura: Hi there {name}.",
+            "Aura: Hello there.",
+            "Aura: Hi there.",
             "Aura: Good to see you again.",
             "Aura: Ready when you are.",
-            f"Aura: Hey {name}, how can I help?"])
+            "Aura: Hey, how can I help?",
+            "Aura: Welcome back.",
+            "Aura: Hey! What's up?",
+            "Aura: Hello! How are you?",
+            "Aura: Hi! What can I do for you?",
+            "Aura: Hey there!",
+            "Aura: Nice to see you.",
+            "Aura: Hello! What are we working on today?"
+        ])
         return reply
-
 
     def farwell_replies(self):
         reply = random.choice([

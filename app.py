@@ -48,7 +48,7 @@ if prompt:
     #applying condition if user is greeting or not
     if prompt in ['hi','hello','hey','yo','wassup']:
         with st.chat_message("assistant"):
-            response = st.write_stream(aura.type_animator(aura.greeting_replies('kunal')))
+            response = st.write_stream(aura.type_animator(aura.greeting_replies()))
         st.session_state.messages.append({"role": "assistant", "content": response})
 
     #chcceking user says bye or not
