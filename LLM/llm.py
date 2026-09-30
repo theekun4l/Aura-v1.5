@@ -29,4 +29,3 @@ def ask_llm(prompt):
 
 
 
-print(ask_llm("Hello bro"))
